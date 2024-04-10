@@ -1,9 +1,11 @@
 <?php
     require_once("calculation.php");
     // フォームから送られた情報を格納
-    $fruits = $_POST["fruits"];
-    $min_price = $_POST["min_price"];
-    $max_price = $_POST["max_price"];
+    if( isset($_POST["fruits"]) && isset($_POST["min_price"]) && isset($_POST["max_price"]) ){
+        $fruits = htmlspecialchars( $_POST["fruits"], ENT_QUOTES );
+        $min_price = htmlspecialchars( $_POST["min_price"], ENT_QUOTES );
+        $max_price = htmlspecialchars( $_POST["max_price"], ENT_QUOTES );   
+    }
     $prices = array();
     // ランダムに15個の果物の値段を取得
     for( $num = 0; $num < 15; $num++ ) {
