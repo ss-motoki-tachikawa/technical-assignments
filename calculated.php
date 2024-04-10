@@ -16,15 +16,11 @@
     $max_result = $calculation->getMax($prices);
     $min_result = $calculation->getMin($prices);
     $avg_result = round($calculation->getAvg($prices));
+    echo "<strong>" . $fruits . "</strong>";
+    echo "<br />";
+    echo "最高値は、" . "<strong>" . $max_result . "</strong>" . "です。";
+    echo "<br />";
+    echo "最低値は、" . "<strong>" . $min_result . "</strong>" . "です。";
+    echo "<br />";
+    echo "平均値は、" . "<strong>" . $avg_result . "</strong>" . "です。";
 ?>
-<!DOCTYPE html>
-<head>
-</head>
-<body>
-    <p><?php echo $fruits; ?></p>
-    <p>最高値は、<?php echo $max_result; ?>です。</p>
-    <p>最低値は、<?php echo $min_result; ?>です。</p>
-    <p>平均値は、<?php echo $avg_result; ?>です。</p>
-</body>
-</html>
-
