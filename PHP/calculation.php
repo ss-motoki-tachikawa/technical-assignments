@@ -1,21 +1,17 @@
 <?php
     class Calculation{
-        public $max;
-        public $min;
-        public $avg;
-
-        function getMax($prices) {
-            $this->max = max($prices);
-            return $this->max;
+        public static function getMax($prices) {
+            $max = max($prices);
+            return $max;
         }
 
-        function getMin($prices) {
-            $this->min = min($prices);
-            return $this->min;
+        public static function getMin($prices) {
+            $min = min($prices);
+            return $min;
         }
 
-        function getAvg($prices) {
-            $this->avg = array_sum($prices) / count($prices);
-            return $this->avg;
+        public static function getAvg($prices) {
+            $avg = array_sum($prices) / count($prices);
+            return $avg;
         }
     }

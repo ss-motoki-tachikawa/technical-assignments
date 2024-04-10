@@ -12,10 +12,10 @@
         $prices[] = rand($min_price, $max_price);
     }
     // インスタンス化と関数の呼び出し
-    $calculation = new Calculation();
-    $max_result = $calculation->getMax($prices);
-    $min_result = $calculation->getMin($prices);
-    $avg_result = round($calculation->getAvg($prices));
+    // $calculation = new Calculation();
+    $max_result = Calculation::getMax($prices);
+    $min_result = Calculation::getMin($prices);
+    $avg_result = round(Calculation::getAvg($prices));
     echo "<strong>" . $fruits . "</strong>";
     echo "<br />";
     echo "最高値は、" . "<strong>" . $max_result . "</strong>" . "です。";
