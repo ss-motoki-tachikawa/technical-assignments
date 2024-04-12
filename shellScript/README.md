@@ -1,0 +1,1 @@
+<img width="506" alt="image" src="https://github.com/ss-motoki-tachikawa/technical-assignments/assets/166362007/a1237b09-2374-4bca-adf2-4d8106d51fac">
